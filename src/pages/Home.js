@@ -6,7 +6,10 @@ import SocialCard from '../components/Card/Card';
 export const Home = () => {
   return (
     <>
-      <Hero mainTitle="Official Farkas Adrián Fan Club" subTitle="R.I.P. LUXXXI 2022.07.25 - 2022.10.17"></Hero>
+      <Hero
+        mainTitle="Official Farkas Adrián Fan Club"
+        subTitle="R.I.P. LUXXXI 2022.07.25 - 2022.10.17"
+      ></Hero>
       <Block blockTitle="Social media">
         <a href="https://www.reddit.com/r/FarkasAdrianFanClub" target="_blank">
           <SocialCard
@@ -26,10 +29,13 @@ export const Home = () => {
             socialName="c/Hungary"
           />
         </a>
-        <a href="https://www.reddit.com/r/FarkasAdrianFanClub" target="_blank">
+        <a
+          href="https://www.youtube.com/channel/UC6yc8SOONah0F_-V3c2B5NQ"
+          target="_blank"
+        >
           <SocialCard
             socialIcon="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/YouTube_social_red_circle_%282017%29.svg/300px-YouTube_social_red_circle_%282017%29.svg.png"
-            socialName="Coming Soon"
+            socialName="Adrian Wolfgang"
           />
         </a>
       </Block>
