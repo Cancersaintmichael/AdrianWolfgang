@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 
-export const StyledCard = styled.div`
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  border: 2px solid var(--primary-color);
-  transition: .2s background-color ease-in-out;
+export const StyledCard = styled.button`
+  color: var(--text-color);
+  padding: 1rem 0;
+  font-weight: bold;
+`;
 
-  &:hover {
-    background-color: #f5f5f5;
-  }
-
-  h3 {
-    margin-block-end: 0;
-  }
+export const SocialVariant = styled(StyledCard)`
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    &:hover {
+      color: var(--button-hover-color);
+      background-color: var(--primary-button-hover-background);
+      border-color: var(--primary-button-hover-background);
+    }
 `;
