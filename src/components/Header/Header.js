@@ -26,7 +26,15 @@ export default function Header() {
         <NavLink to="/">
           <StyledLogo />
         </NavLink>
-        <Navigation></Navigation>
+        <Navigation>
+          <NavLink to="/" end>
+            Home
+          </NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
+          <NavLink to="/news">News</NavLink>
+          <NavLink to="/products">Products</NavLink>
+          <NavLink to="/about">About</NavLink>
+        </Navigation>
       </MainContainer>
       <ScrollIndicator />
     </StyledHeader>
