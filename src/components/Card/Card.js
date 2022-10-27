@@ -1,13 +1,13 @@
 import React from 'react';
-import { StyledCard } from './Card.styles';
+import { SocialVariant } from './Card.styles';
 
 export default function SocialCard(props) {
   const socialIcon = props.socialIcon;
   const socialName = props.socialName;
   return (
-    <StyledCard>
-      <img src={socialIcon} width="86x" />
+    <SocialVariant>
+      <img src={socialIcon} width="86px" />
       <h3>{socialName}</h3>
-    </StyledCard>
+    </SocialVariant>
   );
 }

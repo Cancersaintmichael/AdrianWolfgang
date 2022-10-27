@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
-export const StyledCard = styled.button`
+export const StyledCard = styled.div`
   color: var(--text-color);
   padding: 1rem 0;
   font-weight: bold;
 `;
 
 export const SocialVariant = styled(StyledCard)`
-    background-color: var(--primary-color);
+    background-color: white;
     border: 2px solid var(--primary-color);
     &:hover {
-      color: var(--button-hover-color);
-      background-color: var(--primary-button-hover-background);
-      border-color: var(--primary-button-hover-background);
+      background-color: #eee;
     }
 `;
