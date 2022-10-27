@@ -1,7 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { Gallery } from './pages/Gallery';
+import { Gallery } from './pages/Gallery/Gallery';
+import { Images } from './pages/Gallery/Images';
+import { Videos } from './pages/Gallery/Videos';
 import { News } from './pages/News';
 import { Products } from './pages/Products/Products';
 import { FeaturedProducts } from './pages/Products/FeaturedProducts';
@@ -22,8 +24,12 @@ export default function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/gallery" element={<Gallery />}></Route>
         <Route path="/news" element={<News />}></Route>
+        <Route path="/gallery" element={<Gallery />}>
+          <Route index element={<Images />} />
+          <Route path="images" element={<Images />} />
+          <Route path="videos" element={<Videos />} />
+        </Route>
         <Route path="/products" element={<Products />}>
           <Route index element={<FeaturedProducts />} />
           <Route path="featured" element={<FeaturedProducts />} />
