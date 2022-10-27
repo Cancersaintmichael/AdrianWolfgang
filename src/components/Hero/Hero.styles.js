@@ -5,7 +5,6 @@ export const StyledHero = styled.section`
   background-size: cover;
   background-position: center;
   padding: 1rem 0;
-  height: 6000px;
   display: flex;
   align-items: center;
 
