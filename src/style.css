@@ -22,6 +22,7 @@ a {
   --primary-color: hsl(36, 97%, 61%);
   --secondary-color: hsl(218, 17%, 9%);
   --text-color: hsl(0, 0%, 17%);
+  --light-background: hsl(0, 0%, 93%);
   --secondary-button-background: hsl(0, 0%, 100%);
   --scroll-indicator-background: hsl(0, 0%, 93%);
   --secondary-button-hover-color: hsl(218, 17%, 9%);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SocialVariant } from './Card.styles';
+import { SocialVariant, ImageVariant } from './Card.styles';
 
 export default function SocialCard(props) {
   const socialIcon = props.socialIcon;
