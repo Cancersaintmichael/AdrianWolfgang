@@ -27,7 +27,14 @@ export default function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/news" element={<News />}></Route>
         <Route path="/gallery" element={<Gallery />}>
-          <Route index element={<LazyImages />} />
+          <Route
+            index
+            element={
+              <React.Suspense fallback="Loading...">
+                <LazyImages />
+              </React.Suspense>
+            }
+          />
           <Route
             path="images"
             element={

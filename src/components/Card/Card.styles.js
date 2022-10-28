@@ -12,6 +12,12 @@ export const SocialVariant = styled(StyledCard)`
     &:hover {
       background-color: #eee;
     }
+    
+    @media (max-width: 480px) {
+      img {
+        width: 64px;
+      }
+    }
 `;
 
 export const ImageVariant = styled(StyledCard)`
