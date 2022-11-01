@@ -2,9 +2,10 @@ import React from 'react';
 import { StyledHeader } from './Header.styles';
 import { StyledLogo } from '../Logo/Logo.styles';
 import { MainContainer } from '../Container/Container';
-import Navigation from '../Navigation/Navigation';
 import { StyledHeader } from './Header.styles';
 import ScrollIndicator from '../ScrollIndicator/ScrollIndicator';
+import Sidebar from '../MobileSidebar/MobileSidebar';
+import Navigation from '../Navigation/Navigation';
 import { NavLink } from 'react-router-dom';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
 
@@ -35,6 +36,7 @@ export default function Header() {
           <NavLink to="/products">Products</NavLink>
           <NavLink to="/about">About</NavLink>
         </Navigation>
+        <Sidebar />
       </MainContainer>
       <ScrollIndicator />
     </StyledHeader>
