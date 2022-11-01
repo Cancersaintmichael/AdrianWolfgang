@@ -7,7 +7,7 @@ import './../../style.css';
 const Images = () => {
   return (
     <>
-      <Gallery>
+      <Gallery type="image">
         <ImageCard
           imageLink="https://i.redd.it/4kxie8z9byu91.jpg"
           imageTitle="Adrian Wolfgang, if he was beautiful"
