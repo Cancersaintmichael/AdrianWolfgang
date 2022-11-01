@@ -7,16 +7,17 @@ export const StyledSidebar = styled.div`
 
   nav {
     display: none;
-    height: 100%;
-    flex-direction: column;
     position: fixed;
+    width: 100%;
+    left: 0;
+    justify-content: center;
+    text-align: center;
     top: 100px;
     background: white;
-    width: 100%;
   }
 
   .open {
-    display: flex;
+    display: grid;
   }
 
   a {

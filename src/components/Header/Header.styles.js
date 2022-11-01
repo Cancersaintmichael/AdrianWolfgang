@@ -5,10 +5,15 @@ export const StyledHeader = styled.header`
   position: sticky;  
   top: 0;
 
-  div {
+  > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
+  > div > nav {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 `;
