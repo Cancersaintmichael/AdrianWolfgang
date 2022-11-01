@@ -4,7 +4,7 @@ import { StyledLogo } from '../Logo/Logo.styles';
 import { MainContainer } from '../Container/Container';
 import { StyledHeader } from './Header.styles';
 import ScrollIndicator from '../ScrollIndicator/ScrollIndicator';
-import Sidebar from '../MobileSidebar/MobileSidebar';
+import Sidebar from '../Sidebar/Sidebar';
 import Navigation from '../Navigation/Navigation';
 import { NavLink } from 'react-router-dom';
 import { useScrollPosition } from '../../hooks/useScrollPosition';

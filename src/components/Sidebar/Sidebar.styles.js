@@ -1,9 +1,23 @@
 import styled from 'styled-components';
 
 export const StyledSidebar = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  @media (min-width: 767px) {
+    display: none;
+  }
+
+  nav {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    background: white;
+    width: 100%;
+  }
+
+  .open {
+    display: flex;
+  }
 
   a {
     color: var(--text-color);
@@ -11,6 +25,7 @@ export const StyledSidebar = styled.div`
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
+    padding: .5em 1em;
   }
 
   a:hover, .active {
