@@ -11,7 +11,7 @@ export default function Footer() {
         <NavLink to="/">
           <StyledLogo />
         </NavLink>
-        <p>DominikBudapest.com - Copyright 2022</p>
+        <p>DominikBudapest.com Copyright 2022</p>
       </MainContainer>
     </StyledFooter>
   );
