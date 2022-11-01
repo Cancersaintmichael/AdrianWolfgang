@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import PageHead from '../../components/PageHead/PageHead';
+import Navigation from '../../components/Navigation/Navigation';
 import { MainContainer } from '../../components/Container/Container';
 
 export const Products = () => {
@@ -11,10 +12,10 @@ export const Products = () => {
           pageTitle="Products"
           pageDescription="Here you can find awesome products related to the Szarfasz Baszrián Universe"
         />
-        <nav>
-          <Link to="featured">Featured</Link>
-          <Link to="new">New</Link>
-        </nav>
+        <Navigation>
+          <NavLink to="featured">Featured</NavLink>
+          <NavLink to="new">New</NavLink>
+        </Navigation>
         <Outlet />
       </MainContainer>
     </>

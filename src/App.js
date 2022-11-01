@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Gallery } from './pages/Gallery/Gallery';
-// import { Images } from './pages/Gallery/Images';
 const LazyImages = React.lazy(() => import('./pages/Gallery/Images'));
+const LazyVideos = React.lazy(() => import('./pages/Gallery/Videos'));
 import { Videos } from './pages/Gallery/Videos';
 import { News } from './pages/News';
 import { Products } from './pages/Products/Products';
@@ -43,7 +43,14 @@ export default function App() {
               </React.Suspense>
             }
           />
-          <Route path="videos" element={<Videos />} />
+          <Route
+            path="videos"
+            element={
+              <React.Suspense fallback="Loading...">
+                <LazyVideos />
+              </React.Suspense>
+            }
+          />
         </Route>
         <Route path="/products" element={<Products />}>
           <Route index element={<FeaturedProducts />} />

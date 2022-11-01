@@ -1,7 +1,7 @@
 import React from 'react';
 import Gallery from '../../components/Gallery/Gallery';
 
-export const Videos = () => {
+const Videos = () => {
   return (
     <Gallery>
       <iframe
@@ -35,3 +35,5 @@ export const Videos = () => {
     </Gallery>
   );
 };
+
+export default Videos;
