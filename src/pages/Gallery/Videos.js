@@ -3,7 +3,7 @@ import Gallery from '../../components/Gallery/Gallery';
 
 export const Videos = () => {
   return (
-    <Gallery type="video">
+    <Gallery>
       <iframe
         src="https://www.youtube.com/embed/GjKtseWkcAQ"
         title="Hartyán Donát Üzenete az r/FarkasAdriaFanClub Irányába"
