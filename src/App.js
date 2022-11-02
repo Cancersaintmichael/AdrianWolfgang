@@ -14,6 +14,7 @@ import { NotFound } from './pages/NotFound';
 
 import './style.css';
 import Header from './components/Header/Header';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer/Footer';
 
 const LazyImages = React.lazy(() => import('./pages/Gallery/Images'));
@@ -22,6 +23,7 @@ const LazyVideos = React.lazy(() => import('./pages/Gallery/Videos'));
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
