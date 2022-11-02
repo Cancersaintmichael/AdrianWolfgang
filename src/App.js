@@ -2,9 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Gallery } from './pages/Gallery/Gallery';
-const LazyImages = React.lazy(() => import('./pages/Gallery/Images'));
-const LazyVideos = React.lazy(() => import('./pages/Gallery/Videos'));
-import { Videos } from './pages/Gallery/Videos';
 import { News } from './pages/News';
 import { Products } from './pages/Products/Products';
 import { FeaturedProducts } from './pages/Products/FeaturedProducts';
@@ -19,10 +16,13 @@ import './style.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
+const LazyImages = React.lazy(() => import('./pages/Gallery/Images'));
+const LazyVideos = React.lazy(() => import('./pages/Gallery/Videos'));
+
 export default function App() {
   return (
     <>
-      <Header></Header>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/news" element={<News />}></Route>
@@ -64,7 +64,7 @@ export default function App() {
         </Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
